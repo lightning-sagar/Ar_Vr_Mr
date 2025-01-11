@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+.tracing-gradient {
+  background: linear-gradient(135deg, #ff0099, #4932f3, #ff0099);
+  background-size: 300% 300%;
+  animation: tracing-move 6s ease-in-out infinite;
+}
+
+@keyframes tracing-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.team-desc{
+  margin-top: 160px;
+  margin-left: 50px;
+}
+a {
+  color: var(--link-color);
+} 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes grid-fade {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-grid-fade {
+  animation: grid-fade 4s infinite;
+}
+
+.bg-grid {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Grid Animation */
+@keyframes grid-fade {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-grid-fade {
+  animation: grid-fade 4s infinite;
+}
+
+.bg-grid {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+} 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hover effect for interactive elements */
+.hover-effect {
+  @apply transition-all duration-300 ease-out;
+}
+
+.hover-effect:hover {
+  @apply scale-105;
+}
+
+/* Smooth scroll behavior */
+html {
+  @apply scroll-smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-blue-500 to-purple-500 rounded-full;
+}
+
+
+
